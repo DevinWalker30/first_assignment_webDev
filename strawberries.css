@@ -1,12 +1,31 @@
 body {
-    background-color: rgb(202, 22, 22);
+    background-image: url(red-background.jpg);
 }
 
 .mid-box {
     border: 5px solid black;
     background-color: white;
     text-align: center;
-    position: absolute;
-    left: 10%;
     width: 80%;
+    margin: 0 auto;
+}
+
+.image {
+    border: 5px dashed red;
+}
+
+p {
+    text-align: left;
+    margin: 2% 10%;
+}
+
+.red-words {
+    font-size: x-large;
+    color: red;
+    font-weight: bold;
+}
+
+.list {
+    text-align: left;
+    margin: 2% 10%;
 }
