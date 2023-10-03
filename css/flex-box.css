@@ -13,8 +13,12 @@ div {
     border: 2px solid black;
 }
 
+.nums {
+    margin: 5px;
+}
+
 .one {
-    background-color: red;
+    background-color: rgb(238, 67, 67);
     width: 30px;
 }
 
@@ -77,6 +81,7 @@ div {
     background-color: green;
     width: 30px;
     height: 35px;
+    margin: auto 5px;
 }
 
 .nine_ten {
