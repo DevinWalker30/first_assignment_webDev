@@ -1,0 +1,29 @@
+.header {
+    background-color: rgb(136, 255, 0);
+    justify-items: flex-end;
+    margin: 5px;
+    height: 100px;
+}
+
+.head {
+    margin: 10px;
+}
+
+.mid {
+    display: flex;
+    
+}
+
+.article {
+    width: 50%;
+}
+
+.aside {
+    width: 25%;
+    background-color: tan;
+}
+
+.nav {
+    width: 25%;
+    background-color: rgb(144, 179, 149);
+}
