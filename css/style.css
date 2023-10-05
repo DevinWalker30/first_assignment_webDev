@@ -1,6 +1,35 @@
+body {
+    background-color: antiquewhite;
+}
+
+img {
+    height: 100px;
+    width: 250px;
+}
+
+
+.whole {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header {
+    width: 25%;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    width: 75%;
+}
+
 a {
     color: rgb(189, 57, 171);
     text-decoration: none;
+    font-size: x-large;
 }
 
 a:hover {
