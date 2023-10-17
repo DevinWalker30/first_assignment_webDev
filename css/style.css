@@ -3,7 +3,7 @@ body {
     margin: 0;
 }
 
-img {
+.imgs {
     height: 100px;
     width: 250px;
 }
@@ -23,8 +23,12 @@ header {
     font-family: cursive;
 }
 
+.horru{
+    margin: 0 0 1% 0;
+}
+
 a {
-    color: rgb(189, 57, 171);
+    color: rgb(223, 82, 204);
     text-decoration: none;
     font-size: x-large;
 }
@@ -36,15 +40,20 @@ a:hover {
 main {
     font-size: x-large;
     font-family: cursive;
+    margin: 1% .5%;
+}
+
+header,
+footer {
+    background-color: rgb(54, 196, 243);
+    color: antiquewhite;
 }
 
 footer{
     display: flex;
     justify-content: space-between;
-    margin: 1% 0;
+    margin: 1% 0 0 0;
     font-size: small;
-    background-color: black;
-    color: antiquewhite;
 }
 
 .link_icons {
