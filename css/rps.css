@@ -60,3 +60,9 @@ button {
     background-color: rgb(80, 80, 224);
     color:rgb(197, 212, 226)
 }
+
+.reset-btn {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
