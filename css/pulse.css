@@ -1,0 +1,16 @@
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-link a {
+    color: black;
+}
+
+main {
+    background-color: #eafaf1;
+}
+
+h1 {
+    text-transform: capitalize;
+}
