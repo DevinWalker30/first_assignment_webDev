@@ -153,14 +153,11 @@ ul {
     background-color: #dfe3ec;
     text-align: center;
     border: 2px solid rgb(196, 196, 196);
-    margin-top: 2em;
 }
 
 .plan-right {
+    margin-top: 2em;
     text-align: center;
-}
-
-.plan-right-body {
     background-color: #fcfcfc;
 }
 
