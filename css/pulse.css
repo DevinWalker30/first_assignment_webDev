@@ -5,6 +5,7 @@ body {
 header {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 1em;
 }
 
 .nav-link a {
@@ -22,6 +23,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin-bottom: 1.5em;
 }
 
 .hero h4 {
@@ -29,7 +31,7 @@ h1 {
 }
 
 .hero-description {
-    width: 75%;
+    width: 50%;
     text-align: center;
 }
 
@@ -51,6 +53,7 @@ h1 {
 
 .left-head {
     width: 90%;
+    margin-top: 1.5em;
 }
 
 .plan-left h3 {
@@ -134,6 +137,40 @@ button {
     font-weight: bold;
 }
 
+/* .plan-mid ul li::before {
+    content: '✓';
+    color: #1fe374;
+} */
+
+ul {
+    color: #1fe374;
+    text-align: start;
+    padding-bottom: .5em;
+}
+
+.comp-bus {
+    color: #959ba3;
+    background-color: #dfe3ec;
+    text-align: center;
+    border: 2px solid rgb(196, 196, 196);
+    margin-top: 2em;
+}
+
 .plan-right {
     text-align: center;
+}
+
+.plan-right-body {
+    background-color: #fcfcfc;
+}
+
+.unlock-extra p {
+    font-size: xx-large;
+    color: #00ad6a;
+    margin-bottom: .075em;
+}
+
+.plan-right h3 {
+    margin-top: 0;
+    color: #7a7d83;
 }
