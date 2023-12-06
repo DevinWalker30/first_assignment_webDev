@@ -1,11 +1,17 @@
 body {
     background-color: #eafaf1;
+    margin: 0;
 }
 
 header {
     display: flex;
     justify-content: space-between;
+    padding-top: .5em;
     margin-bottom: 1em;
+}
+
+header button {
+    background-color: #eafaf1;
 }
 
 .nav-link a {
@@ -14,6 +20,7 @@ header {
 }
 
 h1 {
+    font-family: 'Open Sans', sans-serif;
     text-transform: capitalize;
     margin-bottom: 1em;
 }
@@ -31,6 +38,7 @@ h1 {
 }
 
 .hero-description {
+    font-weight: 300;
     width: 50%;
     text-align: center;
 }
@@ -85,6 +93,7 @@ h1 {
 }
 
 .rec p {
+    font-family: 'Francois One', sans-serif;
     text-transform: uppercase;
     color: #fcfcfc;
     margin-top: 0;
@@ -92,6 +101,7 @@ h1 {
 }
 
 .rec {
+    border-radius: 5px 5px 0 0;
     margin-top: 0;
     background-color: #00ad6a;
 }
@@ -104,6 +114,7 @@ h1 {
 }
 
 .plan-mid {
+    border-radius: 10px 10px 0 0;
     text-align: center;
     border: 2px solid #00ad6a;
     background-color: #fcfcfc;
@@ -126,6 +137,10 @@ button {
     background-color: #1fe374;
     border: none;
     padding: .5em 1em;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 .get-basics {
@@ -185,6 +200,11 @@ ul {
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    align-items: center;
+}
+
+.hero-2 h2 {
+    width: 75%;
 }
 
 .hero-2 p {
@@ -203,6 +223,10 @@ ul {
     background-color: #fcfcfc;
 }
 
+.faq h2 {
+    font-family: 'Exo 2', sans-serif;
+}
+
 .faq-lists {
     display: flex;
     flex-direction: row;
@@ -213,27 +237,32 @@ ul {
     font-weight: bolder;
 }
 
-.li-head p {
+.li-head {
+    font-family: 'Exo 2', sans-serif;
     font-size: large;
     color: black;
 }
 
-.list-left {
+.faq-lists li p {
+    font-family: 'Exo', sans-serif;
+}
+
+.list-left, .list-right{
     width: 45%;
 }
 
-.list-right {
-    width: 45%;
-}
-
-@media (max-width: 400px) {
+@media (max-width: 600px) {
     .faq-lists {
         flex-direction: column;
+    }
+    .list-left, .list-right{
+        width: 90%;
     }
 }
 
 footer {
-    width: 100%;
+    /* width: 100%; */
+    margin: 0;
     background-color: #080c16;
 }
 
@@ -284,4 +313,15 @@ footer button {
 
 .copyright a {
     color: rgb(134, 134, 134);
+}
+
+@media (max-width: 700px) {
+    .footer-parts {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-right {
+        width: 90%;
+        justify-content: space-between;
+    }
 }
