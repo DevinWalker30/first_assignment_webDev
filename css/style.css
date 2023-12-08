@@ -57,6 +57,54 @@ main {
     margin: 1%;
 }
 
+main h2 {
+    margin: 0 0 .5em .5em;
+}
+
+main h5 {
+    margin: 0 0 0 .5em;
+}
+
+form {
+    margin: 0 1em;
+}
+
+label {
+    font-size: .5em;
+}
+
+.required {
+    color: red;
+}
+
+.full-name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.label-names {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-label-name {
+    padding-top: .5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.current-addy {
+    display: flex;
+    justify-content: space-between;
+}
+
+.addy-lines {
+    width: 50%;
+    padding-top: .5em;
+    display: flex;
+    flex-direction: column;
+}
+
 header,
 footer {
     background-color: rgb(54, 196, 243);
@@ -67,6 +115,8 @@ footer{
     display: flex;
     justify-content: space-between;
     margin-top: 1%;
+    position: absolute; bottom: 0;
+    width: 100%;
 }
 
 .footer_left,
