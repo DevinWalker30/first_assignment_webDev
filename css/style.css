@@ -101,8 +101,93 @@ label {
 .addy-lines {
     width: 50%;
     padding-top: .5em;
+    padding-right: 2.5em;
+}
+
+.addy-lines label {
+    padding-bottom: .75em;
+}
+
+.st-lines {
     display: flex;
     flex-direction: column;
+}
+
+.addy-line-inputs {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.addy-line-inputs input {
+    width: 45%;
+}
+
+.addy-line-inputs select {
+    width: 46.6%;
+}
+
+.addy-line-labels {
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.email {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 3em;
+}
+
+.email-address {
+    width: 52.5%;
+    display: flex;
+    align-items: center;
+}
+
+.email-address input {
+    width: 100%;
+}
+
+.num {
+    display: flex;
+    justify-content: space-between;
+}
+
+.phone-num {
+    width: 56%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.num-input {
+    width: 100%;
+}
+
+.num-label {
+    width: 50%;
+    padding-right: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.posns {
+    width: 50%;
+    padding-right: 6%;
+    display: flex;
+    align-items: center;
+    border: 2px solid red;
+}
+
+.posns input {
+    width: 50%;
 }
 
 header,
@@ -115,7 +200,6 @@ footer{
     display: flex;
     justify-content: space-between;
     margin-top: 1%;
-    position: absolute; bottom: 0;
     width: 100%;
 }
 
