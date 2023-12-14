@@ -35,7 +35,7 @@
                     </div>
                     <div class="label-names">
                         <label for="first-name">First Name</label>
-                        <label for="middle-name">Middle Name</label>
+                        <label for="middle-name">Middle Init</label>
                         <label for="last-name">Last Name</label>
                     </div>
                 </div>
@@ -45,7 +45,7 @@
                 <div class="addy-lines">
                     <div class="st-lines">
                         <input type="text" id="addy-line-one">
-                        <label for="addy-line-one">Street Address</label>
+                        <label for="addy-line-one">Street Address 1</label>
                         <input type="text" id="addy-line-two">
                         <label for="addy-line-one">Street Address 2</label>
                     </div>
@@ -77,32 +77,61 @@
             <div class="email">
                 <p>Email Address <span class="required">*</span></p>
                 <div class="email-address">
-                    <input type="email" placeholder="ex: myname@example.com">
+                    <input type="email" placeholder="ex: myname@example.com" required>
                 </div>
             </div>
             <div class="num">
                 <p>Phone Number</p>
-                <div class="phone-num">
-                    <div class="num-input">
-                        <input type="tel" id="area-code">
-                        <input type="tel" id="phone-num">
-                    </div>
-                    <div class="num-label">
-                        <label for="area-code">Area Code</label>
-                        <label for="phone-num">Phone Number</label>
+                <div class="phone-num-label">
+                    <div class="phone-num">
+                        <div class="num-input">
+                            <input type="tel" id="area-code">
+                            <p>-</p>
+                            <input type="tel" id="phone-num">
+                        </div>
+                        <div class="num-label">
+                            <label for="area-code">Area Code</label>
+                            <label for="phone-num">Phone Number</label>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="pos">
                 <p>Applying for Position <span class="required">*</span></p>
                 <div class="posns">
-                    <select name="positions" id="positions">
+                    <select name="positions" id="positions" required>
                         <option value="select">Select</option>
                         <option value="ui/ux">UI/UX Developer</option>
                         <option value="front-end">Front-End Developer</option>
                         <option value="back-end">Back-End Developer</option>
                     </select>
                 </div>
+            </div>
+            <div class="start">
+                <p>Start Date</p>
+                <div class="date">
+                    <input type="date" id="date">
+                    <label for="date">Date</label>
+                </div>
+            </div>
+            <div class="upload">
+                <p>Upload Resume <span class="required">*</span></p>
+                <div class="resume">
+                    <input type="file" id="resume" required>
+                </div>
+            </div>
+            <div class="photo">
+                <p>Take Photo</p>
+                <div class="photo-btn">
+                    <input type="button" id="photo" value="Take Photo">
+                </div>
+            </div>
+            <div class="terms">
+                <input type="checkbox" id="terms" required>
+                <label for="terms">I agree to <a href="#">terms & conditions</a>. <span class="required">*</span></label>
+            </div>
+            <div class="submit">
+                <input type="submit" id="submit">
             </div>
         </form>
     </main>

@@ -67,6 +67,12 @@ main h5 {
 
 form {
     margin: 0 1em;
+    padding-right: 1em;
+}
+
+.full-name p {
+    display: flex;
+    justify-content: flex-start;
 }
 
 label {
@@ -77,20 +83,32 @@ label {
     color: red;
 }
 
-.full-name {
+.full-name,
+.label-names,
+.addy-line-inputs,
+.addy-line-labels,
+.email,
+.num,
+.num-input,
+.num-label,
+.pos,
+.start,
+.upload,
+.photo {
     display: flex;
     justify-content: space-between;
-}
-
-.label-names {
-    display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
 }
 
 .input-label-name {
-    padding-top: .5em;
+    width: 60%;
+}
+
+.input-names {
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
 }
 
 .current-addy {
@@ -99,9 +117,8 @@ label {
 }
 
 .addy-lines {
-    width: 50%;
+    width: 60%;
     padding-top: .5em;
-    padding-right: 2.5em;
 }
 
 .addy-lines label {
@@ -113,81 +130,72 @@ label {
     flex-direction: column;
 }
 
-.addy-line-inputs {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-}
-
-.addy-line-inputs input {
-    width: 45%;
-}
-
-.addy-line-inputs select {
-    width: 46.6%;
-}
-
-.addy-line-labels {
-    /* width: 100%; */
-    display: flex;
-    justify-content: space-between;
-}
-
-.email {
-    display: flex;
-    justify-content: space-between;
-    padding-right: 3em;
-}
-
 .email-address {
-    width: 52.5%;
-    display: flex;
-    align-items: center;
+    width: 60%;
 }
 
 .email-address input {
-    width: 100%;
+    width: 90%;
+    display: flex;
 }
 
-.num {
-    display: flex;
-    justify-content: space-between;
+.phone-num-label {
+    width: 60%;
 }
 
 .phone-num {
-    width: 56%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.num-input {
-    width: 100%;
-}
-
-.num-label {
-    width: 50%;
-    padding-right: 50%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.pos {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    width: 40%;
 }
 
 .posns {
-    width: 50%;
-    padding-right: 6%;
-    display: flex;
-    align-items: center;
-    border: 2px solid red;
+    width: 60%;
 }
 
-.posns input {
-    width: 50%;
+.posns select {
+    width: 75%;
+}
+
+.date {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.date input {
+    width: 25%;
+}
+
+.resume,
+.photo-btn {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.terms {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.terms input {
+    height: 1em;
+}
+
+.terms label {
+    font-size: .7em;
+}
+
+.submit {
+    width: 100%;
+    padding-top: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+.submit input,
+.photo input {
+    font-size: .75em;
 }
 
 header,
