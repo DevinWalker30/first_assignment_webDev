@@ -29,7 +29,7 @@ header {
 }
 
 .horru{
-    margin: 0 0 1% 0;
+    margin: 0;
 }
 
 a {
@@ -54,15 +54,45 @@ a:hover {
 main {
     font-size: x-large;
     font-family: cursive;
-    margin: 1%;
 }
 
-main h2 {
-    margin: 0 0 .5em .5em;
+.mobile {
+    height: 72vh;
+    background-color: #f7daeb;
+    position: relative;
 }
 
-main h5 {
-    margin: 0 0 0 .5em;
+.mobile,
+.mobile img {
+    margin-top: 0;
+    width: 100%;
+}
+
+.faq {
+    background-color:  #fff5f5;
+    position: absolute;
+    top: 1em;
+    border-radius: 15px;
+}
+
+.card {
+    position: absolute;
+    top: 2vw;
+    right: 2vw;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top {
+    position: relative;
+    height: 8em;
+    width: 24em;
+    background-color: rgb(94, 193, 226);
 }
 
 form {
