@@ -24,6 +24,7 @@ h1 {
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-family: cursive;
     flex-wrap: wrap;
 }
@@ -33,7 +34,7 @@ header {
 }
 
 a {
-    color: rgb(199, 199, 253);
+    color: rgb(113, 113, 255);
     text-decoration: none;
     font-size: x-large;
 }
@@ -62,17 +63,31 @@ main {
     position: relative;
 }
 
-.mobile,
-.mobile img {
-    margin-top: 0;
-    width: 100%;
+.mobile-top {
+    height: 30vh;
+    background-image: url('/imgs/background-mobile.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .faq {
+    width: 90%;
     background-color:  #fff5f5;
     position: absolute;
-    top: 1em;
     border-radius: 15px;
+}
+
+.mobile-title {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.mobile-title img {
+    padding: 0 1rem;
 }
 
 .card {
