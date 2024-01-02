@@ -25,7 +25,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: cursive;
+    font-family: 'Permanent Marker', cursive;
     flex-wrap: wrap;
 }
 
@@ -54,7 +54,7 @@ a:hover {
 
 main {
     font-size: x-large;
-    font-family: cursive;
+    font-family: 'Permanent Marker', cursive;
 }
 
 .mobile {
@@ -78,12 +78,35 @@ main {
     width: 90%;
     background-color:  #fff5f5;
     position: absolute;
+    top: 5rem;
     border-radius: 15px;
+    font-family: 'Work Sans', sans-serif;
 }
 
 .mobile-title {
     display: flex;
     justify-content: flex-start;
+    flex-direction: column;
+}
+
+.faq-title {
+    display: flex;
+    flex-direction: row;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    font-weight: 600;
+    font-size: large;
+    padding-left: 1rem;
+}
+
+.answer {
+    font-weight: 400;
+    padding-left: 2rem;
+    font-size: large;
 }
 
 .mobile-title img {
@@ -254,6 +277,7 @@ footer{
     justify-content: space-between;
     margin-top: 1%;
     width: 100%;
+    font-family: 'Permanent Marker', cursive;
 }
 
 .footer_left,
