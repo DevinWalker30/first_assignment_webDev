@@ -21,7 +21,7 @@ const answers = document.querySelectorAll('.answer')
 btns.forEach(button => {
     console.log(button.src)
 
-    button.addEventListener('touchstart', () => {
+    button.addEventListener('click', () => {
         let index = parseInt(button.id)
         if (button.src == 'http://127.0.0.1:5500/imgs/icon-plus.svg') {
             button.src = 'http://127.0.0.1:5500/imgs/icon-minus.svg'
