@@ -19,7 +19,7 @@ const answers = document.querySelectorAll('.answer')
 // }
 
 btns.forEach(button => {
-    // console.log(button.src)
+    console.log(button.src)
 
     button.addEventListener('click', () => {
         let index = parseInt(button.id)
