@@ -75,12 +75,30 @@ main {
 }
 
 .faq {
-    width: 90%;
+    width: 60%;
     background-color:  #fff5f5;
     position: absolute;
     top: 5rem;
     border-radius: 15px;
     font-family: 'Work Sans', sans-serif;
+}
+
+@media (max-width: 800px) {
+    .faq {
+        width: 90%;
+    }
+}
+
+@media (max-width: 950px) {
+    .faq{
+        width: 80%;
+    }   
+}
+
+@media (max-width: 1350px) {
+    .faq{
+        width: 75%;
+    }
 }
 
 .mobile-title {
