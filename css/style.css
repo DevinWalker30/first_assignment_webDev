@@ -58,7 +58,7 @@ main {
 }
 
 .mobile {
-    height: 72vh;
+    height: 96vh;
     background-color: #f7daeb;
     position: relative;
 }
@@ -107,6 +107,7 @@ main {
     font-weight: 400;
     padding-left: 2rem;
     font-size: large;
+    display: none;
 }
 
 .mobile-title img {
