@@ -28,6 +28,16 @@ header {
     font-family: 'Permanent Marker', cursive;
 }
 
+.header-links {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+header a:hover {
+    padding-bottom: 1rem;
+}
+
 .horru{
     margin: 0;
 }
@@ -41,6 +51,7 @@ a {
 .fa-solid {
     font-size: xx-large;
     padding-right: 1rem;
+    display: none;
 }
 
 .fa-solid:hover {
@@ -48,7 +59,7 @@ a {
 }
 
 .links {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     position: absolute;
@@ -65,6 +76,15 @@ a {
 .links a:hover {
     padding-top: .25rem;
     padding-bottom: 1.25rem;
+}
+
+@media(max-width: 1020px) {
+    .fa-solid {
+        display: flex;
+    }
+    .header-links {
+        display: none;
+    }
 }
 
 a:hover {
