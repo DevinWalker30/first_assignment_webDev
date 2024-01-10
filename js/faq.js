@@ -2,6 +2,10 @@ const btns = document.querySelectorAll('.btn')
 
 const answers = document.querySelectorAll('.answer')
 
+const linksBtn = document.getElementById('hamburg-menu')
+
+const links = document.querySelector('.links')
+
 // btnOne.addEventListener('click', () => {
 //     whichOne(btnOne, answerOne)
 //     // btnOne.src = '/imgs/icon-minus.svg'
@@ -23,13 +27,22 @@ btns.forEach(button => {
 
     button.addEventListener('click', () => {
         let index = parseInt(button.id)
-        if (button.src == '/imgs/icon-plus.svg') {
-            button.src = '/imgs/icon-minus.svg'
+        if (button.src == 'http://127.0.0.1:5500/imgs/icon-plus.svg') {
+            button.src = 'http://127.0.0.1:5500/imgs/icon-minus.svg'
             answers[index].style.display = 'block'
         }
-        else if (button.src == '/imgs/icon-minus.svg') {
-            button.src = '/imgs/icon-plus.svg'
+        else if (button.src == 'http://127.0.0.1:5500/imgs/icon-minus.svg') {
+            button.src = 'http://127.0.0.1:5500/imgs/icon-plus.svg'
             answers[index].style.display = 'none'
         }
     })
+})
+
+linksBtn.addEventListener('click', () => {
+    if (links.style.display == 'none') {
+        links.style.display = 'flex'
+    }
+    else if (links.style.display = 'flex') {
+        links.style.display = 'none'
+    }
 })
