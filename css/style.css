@@ -18,7 +18,7 @@ h1 {
 }
 
 .title {
-    margin: .5% 0 .5% 1%;
+    padding: .5% 0 .5% 1%;
 }
 
 header {
@@ -34,8 +34,12 @@ header {
     width: 80%;
 }
 
-header a:hover {
-    padding-bottom: 1rem;
+.header-links a {
+    padding-top: .5rem;
+}
+
+.header-links a:hover {
+    padding-top: 0;
 }
 
 .horru{
@@ -56,6 +60,7 @@ a {
 
 .fa-solid:hover {
     color: rgb(223, 82, 204);
+    cursor: pointer;
 }
 
 .links {
@@ -80,6 +85,9 @@ a {
 
 @media(max-width: 1020px) {
     .fa-solid {
+        display: block;
+    }
+    .links {
         display: flex;
     }
     .header-links {
@@ -94,6 +102,49 @@ a:hover {
 main {
     font-size: x-large;
     font-family: 'Permanent Marker', cursive;
+}
+
+.four-cards {
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    padding-top: 1rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-sec {
+    display: flex;
+    flex-direction: column;
+    font-size: xx-large;
+}
+
+.hero-sec-bot p {
+    text-align: center;
+    font-size: medium;
+    padding-left: 25%;
+    width: 50%;
+}
+
+.four-cards p {
+    margin: 0;
+}
+
+.light {
+    font-weight: 200;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.card {
+    font-size: large;
+    border: 2px solid red;
+}
+
+.description {
+    font-size: medium;
 }
 
 .mobile {
@@ -172,7 +223,7 @@ main {
     padding: 0 1rem;
 }
 
-.card {
+/* .card {
     position: absolute;
     top: 2vw;
     right: 2vw;
@@ -183,7 +234,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 .top {
     position: relative;
