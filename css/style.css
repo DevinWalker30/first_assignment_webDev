@@ -36,6 +36,7 @@ header {
 
 .header-links a {
     padding-top: .5rem;
+    padding-right: 1rem;
 }
 
 .header-links a:hover {
@@ -52,10 +53,13 @@ a {
     font-size: x-large;
 }
 
+.bars {
+    display: none;
+}
+
 .fa-solid {
     font-size: xx-large;
     padding-right: 1rem;
-    display: none;
 }
 
 .fa-solid:hover {
@@ -84,8 +88,8 @@ a {
 }
 
 @media(max-width: 1020px) {
-    .fa-solid {
-        display: block;
+    .bars {
+        display: flex;
     }
     .links {
         display: flex;
@@ -102,6 +106,7 @@ a:hover {
 main {
     font-size: x-large;
     font-family: 'Permanent Marker', cursive;
+    position: relative;
 }
 
 .four-cards {
@@ -111,6 +116,7 @@ main {
     padding-top: 1rem;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .hero-sec {
@@ -120,14 +126,27 @@ main {
 }
 
 .hero-sec-bot p {
-    text-align: center;
     font-size: medium;
+    text-align: center;
     padding-left: 25%;
     width: 50%;
 }
 
 .four-cards p {
     margin: 0;
+}
+
+.card-left, 
+.card-mid,
+.card-right {
+    width: 30%;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    justify-content: center;
 }
 
 .light {
@@ -140,11 +159,60 @@ main {
 
 .card {
     font-size: large;
-    border: 2px solid red;
+    box-shadow: 5px 5px 35px rgb(204, 204, 204);
+    margin: 1rem;
+    /* padding: 1rem; */
+    border-radius: 5px;
+    /* border: 2px solid red; */
+}
+
+.card-header {
+    display: flex;
+    justify-content: flex-start;
+    padding: .5rem;
+    /* border: 2px solid red; */
 }
 
 .description {
-    font-size: medium;
+    font-size: small;
+    padding: 0 .5rem;
+}
+
+.supp {
+    border-top: 4px solid #45d3d3;
+}
+
+.team {
+    border-top: 4px solid #ea5353;
+}
+
+.kar {
+    border-top: 4px solid #fcaf4a;
+}
+
+.calc {
+    border-top: 4px solid #549ef2;
+}
+
+.card-img {
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media(max-width: 430px) {
+    .cards {
+        flex-direction: column;
+    }
+    .hero-sec {
+        padding: .1rem;
+        text-align: center;
+    }
+    .card-left, 
+    .card-mid,
+    .card-right {
+        width: 100%;
+}
 }
 
 .mobile {
