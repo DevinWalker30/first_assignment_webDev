@@ -1,3 +1,13 @@
+:root {
+    --primary-red: hsl(0, 100%, 74%);
+    --primary-green: hsl(154, 59%, 51%);
+    --accent: hsl(248, 32%, 49%);
+    --neutral-blue: hsl(249, 10%, 26%);
+    --neutral-grey: hsl(246, 25%, 77%);
+}
+
+/* var(--primary-red) */
+
 body {
     background-color: antiquewhite;
     margin: 0;
@@ -312,136 +322,66 @@ main {
 }
 
 form {
-    margin: 0 1em;
-    padding-right: 1em;
-}
-
-.full-name p {
+    background-image: url('/imgs/bg-intro-desktop.png');
+    background-color: var(--primary-red);
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
+    font-family: 'Poppins', sans-serif;
 }
 
-label {
-    font-size: .5em;
-}
-
-.required {
-    color: red;
-}
-
-.full-name,
-.label-names,
-.addy-line-inputs,
-.addy-line-labels,
-.email,
-.num,
-.num-input,
-.num-label,
-.pos,
-.start,
-.upload,
-.photo {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-}
-
-.input-label-name {
-    width: 60%;
-}
-
-.input-names {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.current-addy {
-    display: flex;
-    justify-content: space-between;
-}
-
-.addy-lines {
-    width: 60%;
-    padding-top: .5em;
-}
-
-.addy-lines label {
-    padding-bottom: .75em;
-}
-
-.st-lines {
+.desktop-hero {
+    width: 50%;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem 0;
+    padding-left: 2rem;
+    color: #ffffff;
 }
 
-.email-address {
-    width: 60%;
+.desktop-hero h2 {
+    margin: 0;
+    padding-bottom: .5rem;
 }
 
-.email-address input {
-    width: 90%;
+.desktop-hero p {
+    font-size: medium;
+    margin: 0;
+}
+
+.sign-up {
     display: flex;
-}
-
-.phone-num-label {
-    width: 60%;
-}
-
-.phone-num {
-    width: 40%;
-}
-
-.posns {
-    width: 60%;
-}
-
-.posns select {
-    width: 75%;
-}
-
-.date {
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-}
-
-.date input {
-    width: 25%;
-}
-
-.resume,
-.photo-btn {
-    width: 60%;
-    display: flex;
-    justify-content: center;
-}
-
-.terms {
-    display: flex;
-    justify-content: flex-start;
     align-items: center;
+    flex-direction: column;
+    padding: 2rem 0rem;
 }
 
-.terms input {
-    height: 1em;
+.try-free-btn button {
+    background-color: var(--accent);
+    font-family: 'Poppins', sans-serif;
+    border-radius: 7px;
+    padding: .5rem 2rem;
+    color: hsl(250, 15%, 92%);
 }
 
-.terms label {
-    font-size: .7em;
+.try-free-btn {
+    padding-bottom: 1rem;
 }
 
-.submit {
+.free-btn-white {
+    font-weight: bold;
+    color: white;
+}
+
+.sign-up-card {
+    background-color: white;
+    border-radius: 10px;
     width: 100%;
-    padding-top: 1em;
-    display: flex;
-    justify-content: center;
 }
 
-.submit input,
-.photo input {
-    font-size: .75em;
+input, 
+.input button {
+    width: 100%;
 }
 
 header,
@@ -453,7 +393,6 @@ footer {
 footer{
     display: flex;
     justify-content: space-between;
-    margin-top: 1%;
     width: 100%;
     font-family: 'Permanent Marker', cursive;
 }

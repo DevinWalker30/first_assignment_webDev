@@ -15,6 +15,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -155,116 +158,31 @@
     <script src="/js/faq.js"></script>
     
         <form>
-            <h2>Application</h2>
-            <h5>Please complete the form below to apply for a possition with us.</h5>
-            <hr>
-            <div class="full-name">
-                <p>Full Name <span class="required">*</span></p>
-                <div class="input-label-name">
-                    <div class="input-names">
-                        <input type="text" id="first-name" required>
-                        <input type="text" id="middle-name" required>
-                        <input type="text" id="last-name" required>
-                    </div>
-                    <div class="label-names">
-                        <label for="first-name">First Name</label>
-                        <label for="middle-name">Middle Init</label>
-                        <label for="last-name">Last Name</label>
-                    </div>
-                </div>
+            <div class="desktop-hero">
+                <h2>Learn to code with interactive lessons</h2>
+                <p>See how experienced devs solve problems in real time. Watch scripted tutorials and have real world examples by seeing how a dev thinks.</p>
             </div>
-            <div class="current-addy">
-                <p>Current Address</p>
-                <div class="addy-lines">
-                    <div class="st-lines">
-                        <input type="text" id="addy-line-one">
-                        <label for="addy-line-one">Street Address 1</label>
-                        <input type="text" id="addy-line-two">
-                        <label for="addy-line-one">Street Address 2</label>
+            <div class="sign-up">
+                <div class="try-free-btn">
+                    <button><span class="free-btn-white">Try it free for 7 days</span> then $20/month thereafter</button>
+                </div>
+                <div class="sign-up-card">
+                    <div class="input">
+                        <input type="text" id="first-name" placeholder="First Name" required>
                     </div>
-                    <div class="addy-line-inputs">
-                        <input type="text" id="city">
-                        <input type="text" id="state">
+                    <div class="input">
+                        <input type="text" id="last-name" placeholder="Last Name" required>
                     </div>
-                    <div class="addy-line-labels">
-                        <label for="city">City</label>
-                        <label for="state">State / Provence</label>
+                    <div class="input">
+                        <input type="email" id="email" placeholder="Email" required>
                     </div>
-                    <div class="addy-line-inputs">
-                        <input type="text" id="post">
-                        <select name="countries" id="countries">
-                            <option value="select">Select</option>
-                            <option value="malawi">Malawi</option>
-                            <option value="marshall-islands">Marshall Islands</option>
-                            <option value="pakistan">Pakistan</option>
-                            <option value="bahamas">Bahamas</option>
-                            <option value="cuba">Cuba</option>
-                        </select>
+                    <div class="input">
+                        <input type="password" id="password" placeholder="Password" required>
                     </div>
-                    <div class="addy-line-labels">
-                        <label for="post">Postal / Zip Code</label>
-                        <label for="countries">Country</label>
+                    <div class="input">
+                        <button class="free-trial-btn">claim your free trial</button>
                     </div>
                 </div>
-            </div>
-            <div class="email">
-                <p>Email Address <span class="required">*</span></p>
-                <div class="email-address">
-                    <input type="email" placeholder="ex: myname@example.com" required>
-                </div>
-            </div>
-            <div class="num">
-                <p>Phone Number</p>
-                <div class="phone-num-label">
-                    <div class="phone-num">
-                        <div class="num-input">
-                            <input type="tel" id="area-code">
-                            <p>-</p>
-                            <input type="tel" id="phone-num">
-                        </div>
-                        <div class="num-label">
-                            <label for="area-code">Area Code</label>
-                            <label for="phone-num">Phone Number</label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="pos">
-                <p>Applying for Position <span class="required">*</span></p>
-                <div class="posns">
-                    <select name="positions" id="positions" required>
-                        <option value="select">Select</option>
-                        <option value="ui/ux">UI/UX Developer</option>
-                        <option value="front-end">Front-End Developer</option>
-                        <option value="back-end">Back-End Developer</option>
-                    </select>
-                </div>
-            </div>
-            <div class="start">
-                <p>Start Date</p>
-                <div class="date">
-                    <input type="date" id="date">
-                    <label for="date">Date</label>
-                </div>
-            </div>
-            <div class="upload">
-                <p>Upload Resume <span class="required">*</span></p>
-                <div class="resume">
-                    <input type="file" id="resume" required>
-                </div>
-            </div>
-            <div class="photo">
-                <p>Take Photo</p>
-                <div class="photo-btn">
-                    <input type="button" id="photo" value="Take Photo">
-                </div>
-            </div>
-            <div class="terms">
-                <input type="checkbox" id="terms" required>
-                <label for="terms">I agree to <a href="#">terms & conditions</a>. <span class="required">*</span></label>
-            </div>
-            <div class="submit">
-                <input type="submit" id="submit">
             </div>
         </form>
     </main>
