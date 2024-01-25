@@ -332,16 +332,16 @@ form {
 .desktop-hero {
     width: 50%;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     padding: 2rem 0;
     padding-left: 2rem;
     color: #ffffff;
 }
 
-.desktop-hero h2 {
-    margin: 0;
-    padding-bottom: .5rem;
+.learn-to-code {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: capitalize;
 }
 
 .desktop-hero p {
@@ -354,14 +354,17 @@ form {
     align-items: center;
     flex-direction: column;
     padding: 2rem 0rem;
+    font-size: 1rem;
 }
 
 .try-free-btn button {
     background-color: var(--accent);
     font-family: 'Poppins', sans-serif;
-    border-radius: 7px;
+    border-radius: 5px;
     padding: .5rem 2rem;
     color: hsl(250, 15%, 92%);
+    border: none;
+    box-shadow: 5px 5px 5px rgb(58, 58, 58);
 }
 
 .try-free-btn {
@@ -375,13 +378,81 @@ form {
 
 .sign-up-card {
     background-color: white;
-    border-radius: 10px;
+    border-radius: 5px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* padding: 1rem; */
+}
+
+.inputs {
+    /* border: 2px solid red; */
+    margin: 1rem;
 }
 
 input, 
 .input button {
     width: 100%;
+    margin: .5rem auto;
+}
+
+input {
+    border-radius: 5px;
+    border: 1px solid var(--neutral-grey);
+    height: 2rem;
+    box-sizing: border-box;
+}
+
+::placeholder {
+    padding: 1rem;
+}
+
+.input button {
+    background-color: var(--primary-green);
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    padding: .7rem;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+}
+
+button {
+    letter-spacing: .1rem;
+}
+
+.terms-agree {
+    font-size: small;
+    margin: 0 1rem 1rem 1rem;
+    color: var(--neutral-grey);
+    /* border: 2px solid red; */
+}
+
+.terms-serv {
+    color: hsl(0, 100%, 61%);
+    font-size: small;
+    font-weight: 500;
+}
+
+@media (max-width:475px) {
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sign-up {
+        width: 80%;
+    }
+    .desktop-hero {
+        width: 80%;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    .learn-to-code {
+        padding-bottom: 2rem;
+    }
 }
 
 header,
