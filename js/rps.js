@@ -63,7 +63,7 @@ function compChoice() {
 
 function winLose(userChoice) {
     if ((userChoice == 'rock' && comp == 'paper') || (userChoice == 'scissors' && comp == 'rock') || (userChoice == 'paper' && comp == 'scissors')) {
-        result.innerText = 'Lose'
+        result.innerText = 'Loss'
         compScore += 1
         compScoreTxt.innerText = compScore
     } else if ((comp == 'rock' && userChoice == 'paper') || (comp == 'paper' && userChoice == 'scissors') || (comp == 'scissors' && userChoice == 'rock')) {

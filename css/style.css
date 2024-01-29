@@ -97,11 +97,8 @@ a {
     padding-bottom: 1.25rem;
 }
 
-@media(max-width: 1020px) {
+@media (max-width: 1020px) {
     .bars {
-        display: flex;
-    }
-    .links {
         display: flex;
     }
     .header-links {
@@ -354,6 +351,7 @@ form {
     align-items: center;
     flex-direction: column;
     padding: 2rem 0rem;
+    padding-right: 1rem;
     font-size: 1rem;
 }
 
@@ -452,6 +450,9 @@ button {
     }
     .learn-to-code {
         padding-bottom: 2rem;
+    }
+    .terms-agree {
+        text-align: center;
     }
 }
 
