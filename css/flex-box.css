@@ -60,7 +60,8 @@
 }
 
 .box4:hover + .rowbox1 {
-    
+    transform: rotateZ('90deg');
+    transform: translatex(-100%);
 }
 
 .red {
@@ -87,8 +88,6 @@
 
 .rowbox1 {
     background-color: red;
-    transform: rotate(90deg);
-    transform: translatex(-100%);
     transition: all 1.5s ease-in-out;
 }
 
@@ -107,4 +106,30 @@
 .hi {
     position: absolute;
     z-index: -1;
+}
+
+.hello-wrld {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+    width: 50%;
+    height: 24vh;
+    border-radius: 150px;
+    animation: pulse 5s ease-in-out infinite;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: xx-large;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0);
+    }
+    60% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(.75);
+    }
 }
